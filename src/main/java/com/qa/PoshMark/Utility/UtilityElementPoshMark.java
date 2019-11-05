@@ -113,6 +113,18 @@ public class UtilityElementPoshMark {
 	
 	
 	/**
+	 * here i tried to create generic method for frame handling 
+	 */
+//	public WebDriver frameHandling(By locator) {
+//		WebElement frameElement = driver.findElement(locator);
+//		return  driver.switchTo().frame(frameElement);
+
+//	}
+	
+	
+	
+	
+	/**
 	 * This method is used to pass the values in a webelement
 	 * 
 	 * @param locator

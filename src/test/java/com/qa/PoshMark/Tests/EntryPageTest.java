@@ -41,6 +41,8 @@ public class EntryPageTest {
 
 	@Test(priority = 1)
 	public void verifyEntryPageLogo() {
+		
+	
 		Assert.assertEquals(entryPage.getEntryPageLogo(), Flat_static.POSHMARK_header_logo,"logo couldnot find");;
 	}
 	
