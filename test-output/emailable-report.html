@@ -9,15 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,374</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,177</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.PoshMark.Tests.EntryPageTest</td><td><a href="#m0">verifyEntryPageLogo</a></td><td rowspan="1">1572996284529</td><td rowspan="1">15565</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.PoshMark.Tests.EntryPageTest</td><td><a href="#m1">loginButtonTest</a></td><td rowspan="1">1572996309063</td><td rowspan="1">1184</td></tr><tr class="passedeven"><td><a href="#m2">verifyMainPageTitle</a></td><td rowspan="1">1572996304712</td><td rowspan="1">13</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.PoshMark.Tests.EntryPageTest</td><td><a href="#m0">verifyEntryPageLogo</a></td><td rowspan="1">1572997982126</td><td rowspan="1">51</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.PoshMark.Tests.EntryPageTest</td><td><a href="#m1">loginButtonTest</a></td><td rowspan="1">1572997991889</td><td rowspan="1">1230</td></tr><tr class="passedeven"><td><a href="#m2">verifyMainPageTitle</a></td><td rowspan="1">1572997986622</td><td rowspan="1">22</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.qa.PoshMark.Tests.EntryPageTest#verifyEntryPageLogo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a//img[@class=&apos;header__logo&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.qa.PoshMark.Utility.UtilityElementPoshMark.waitForElementPresent(UtilityElementPoshMark.java:38)
-	at com.qa.PoshMark.Pages.EntryPage.getEntryPageLogo(EntryPage.java:62)
+<h2>Default test</h2><h3 id="m0">com.qa.PoshMark.Tests.EntryPageTest#verifyEntryPageLogo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id ssIFrame_google
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Jeys-MBP.home&apos;, ip: &apos;fe80:0:0:0:ee:d277:2a73:76cb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+	at com.qa.PoshMark.Pages.EntryPage.getEntryPageLogo(EntryPage.java:59)
 	at com.qa.PoshMark.Tests.EntryPageTest.verifyEntryPageLogo(EntryPageTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -47,19 +48,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a//img[@class=&apos;header__logo&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;Jeys-MBP.home&apos;, ip: &apos;fe80:0:0:0:ee:d277:2a73:76cb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 31 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.qa.PoshMark.Tests.EntryPageTest#loginButtonTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.PoshMark.Tests.EntryPageTest#verifyMainPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

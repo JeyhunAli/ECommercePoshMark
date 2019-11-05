@@ -147,11 +147,12 @@
                   <a name="verifyEntryPageLogo">
                   </a> <!-- verifyEntryPageLogo -->
                   <span class="method-name">verifyEntryPageLogo</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a//img[@class=&apos;header__logo&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.qa.PoshMark.Utility.UtilityElementPoshMark.waitForElementPresent(UtilityElementPoshMark.java:38)
-	at com.qa.PoshMark.Pages.EntryPage.getEntryPageLogo(EntryPage.java:62)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id ssIFrame_google
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Jeys-MBP.home&apos;, ip: &apos;fe80:0:0:0:ee:d277:2a73:76cb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+	at com.qa.PoshMark.Pages.EntryPage.getEntryPageLogo(EntryPage.java:59)
 	at com.qa.PoshMark.Tests.EntryPageTest.verifyEntryPageLogo(EntryPageTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -181,19 +182,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a//img[@class=&apos;header__logo&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;Jeys-MBP.home&apos;, ip: &apos;fe80:0:0:0:ee:d277:2a73:76cb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 31 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -225,7 +213,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/p0/h72mllqx00q4913mr83cbfd00000gn/T/testng-eclipse-767788914/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/p0/h72mllqx00q4913mr83cbfd00000gn/T/testng-eclipse--1426248528/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -276,22 +264,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEntryPageLogo')
+data.setCell(0, 1, 'loginButtonTest')
 data.setCell(0, 2, 'com.qa.PoshMark.Tests.EntryPageTest')
-data.setCell(0, 3, 15565);
+data.setCell(0, 3, 1230);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginButtonTest')
+data.setCell(1, 1, 'verifyEntryPageLogo')
 data.setCell(1, 2, 'com.qa.PoshMark.Tests.EntryPageTest')
-data.setCell(1, 3, 1184);
+data.setCell(1, 3, 51);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyMainPageTitle')
 data.setCell(2, 2, 'com.qa.PoshMark.Tests.EntryPageTest')
-data.setCell(2, 3, 13);
+data.setCell(2, 3, 22);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -326,23 +314,23 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyEntryPageLogo</span>
-                <span class="method-start">4634 ms</span>
+                <span class="method-start">6159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20203 ms</span>
+                <span class="method-start">6215 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMainPageTitle</span>
-                <span class="method-start">24817 ms</span>
+                <span class="method-start">10655 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">24832 ms</span>
+                <span class="method-start">10678 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginButtonTest</span>
-                <span class="method-start">29168 ms</span>
+                <span class="method-start">15922 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

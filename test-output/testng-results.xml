@@ -2,26 +2,30 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30374" started-at="2019-11-05T18:24:39 EST" finished-at="2019-11-05T18:25:10 EST">
+  <suite name="Default suite" duration-ms="17177" started-at="2019-11-05T18:52:55 EST" finished-at="2019-11-05T18:53:13 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30374" started-at="2019-11-05T18:24:39 EST" finished-at="2019-11-05T18:25:10 EST">
+    <test name="Default test" duration-ms="17177" started-at="2019-11-05T18:52:55 EST" finished-at="2019-11-05T18:53:13 EST">
       <class name="com.qa.PoshMark.Tests.EntryPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="setUp" is-config="true" duration-ms="4633" started-at="2019-11-05T18:24:39 EST" finished-at="2019-11-05T18:24:44 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="setUp" is-config="true" duration-ms="6158" started-at="2019-11-05T18:52:55 EST" finished-at="2019-11-05T18:53:02 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyEntryPageLogo()[pri:1, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="verifyEntryPageLogo" duration-ms="15565" started-at="2019-11-05T18:24:44 EST" finished-at="2019-11-05T18:25:00 EST">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="verifyEntryPageLogo()[pri:1, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="verifyEntryPageLogo" duration-ms="51" started-at="2019-11-05T18:53:02 EST" finished-at="2019-11-05T18:53:02 EST">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //a//img[@class='header__logo'] (tried for 15 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[No frame element found by name or id ssIFrame_google
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Jeys-MBP.home', ip: 'fe80:0:0:0:ee:d277:2a73:76cb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.1', java.version: '1.8.0_231'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a//img[@class='header__logo'] (tried for 15 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at com.qa.PoshMark.Utility.UtilityElementPoshMark.waitForElementPresent(UtilityElementPoshMark.java:38)
-at com.qa.PoshMark.Pages.EntryPage.getEntryPageLogo(EntryPage.java:62)
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id ssIFrame_google
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Jeys-MBP.home', ip: 'fe80:0:0:0:ee:d277:2a73:76cb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.1', java.version: '1.8.0_231'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at com.qa.PoshMark.Pages.EntryPage.getEntryPageLogo(EntryPage.java:59)
 at com.qa.PoshMark.Tests.EntryPageTest.verifyEntryPageLogo(EntryPageTest.java:46)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -51,38 +55,25 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a//img[@class='header__logo']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Jeys-MBP.home', ip: 'fe80:0:0:0:ee:d277:2a73:76cb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.1', java.version: '1.8.0_231'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.util.Optional.orElseThrow(Optional.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEntryPageLogo -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="setUp" is-config="true" duration-ms="4614" started-at="2019-11-05T18:25:00 EST" finished-at="2019-11-05T18:25:04 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="setUp" is-config="true" duration-ms="4440" started-at="2019-11-05T18:53:02 EST" finished-at="2019-11-05T18:53:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMainPageTitle()[pri:2, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="verifyMainPageTitle" duration-ms="13" started-at="2019-11-05T18:25:04 EST" finished-at="2019-11-05T18:25:04 EST">
+        <test-method status="PASS" signature="verifyMainPageTitle()[pri:2, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="verifyMainPageTitle" duration-ms="22" started-at="2019-11-05T18:53:06 EST" finished-at="2019-11-05T18:53:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMainPageTitle -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="setUp" is-config="true" duration-ms="4336" started-at="2019-11-05T18:25:04 EST" finished-at="2019-11-05T18:25:09 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="setUp" is-config="true" duration-ms="5242" started-at="2019-11-05T18:53:06 EST" finished-at="2019-11-05T18:53:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginButtonTest()[pri:3, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="loginButtonTest" duration-ms="1184" started-at="2019-11-05T18:25:09 EST" finished-at="2019-11-05T18:25:10 EST">
+        <test-method status="PASS" signature="loginButtonTest()[pri:3, instance:com.qa.PoshMark.Tests.EntryPageTest@a7e666]" name="loginButtonTest" duration-ms="1230" started-at="2019-11-05T18:53:11 EST" finished-at="2019-11-05T18:53:13 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginButtonTest -->
