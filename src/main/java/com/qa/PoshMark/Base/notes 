@@ -4,8 +4,14 @@
 
 
 ChromeDriver driver = new ChromeDriver();
+more than 60 method available 
+
+differences 
 
 WebDriver driver = new ChromeDriver();
+more than 20 method available 
+
+
 
 
 
